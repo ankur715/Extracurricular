@@ -2,12 +2,12 @@
 
 Languages:
 
-Python
-R
-SQL
+- Python
+- R
+- SQL
 
 Sources:
 
-College course assignments
-Peers (for practice)
-Fun projects
+- College course assignments
+- Peers (for practice)
+- Fun projects
