@@ -46,7 +46,7 @@ df1 <- gapminder >%>
   filter(country == "Canada" |
            country == "United States") >%>
   
-  t.test(data = df1, lifeExp ~ country)
+t.test(data = df1, lifeExp ~ country)
 # compare average lifeExp between the two countries
 # if statistically different, the p-value will close to 0
 # reject null hypothesis of no difference
@@ -64,7 +64,6 @@ gapminder >%>
   geom_smooth(method = lm)+
   facet_wrap(~continent)
 # aes function is aesthetic for how the variables will be represented
-# + what geometry to be applied, so used point
 # change color according to continents first 
 # make points more transparent with alpha smaller
 # log of gdpPercap to make linear
