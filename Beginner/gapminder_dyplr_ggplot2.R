@@ -35,7 +35,7 @@ library(dyplr)
 gapminder >%>
   select(country,lifeExp) >%>
   filter(country == "Canada" |
-           country == "United States") >%>
+           country == "United States") >%> 
   group_by(country) >%>
   summarize(Average_life = mean(lifeExp))
 
