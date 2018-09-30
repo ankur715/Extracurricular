@@ -1,13 +1,4 @@
-# Random projects
-
-Languages:
-
-- Python
-- R
-- SQL
-
-Sources:
-
-- College course assignments
-- Peers (for practice)
-- Fun projects
+## Random codes or projects 
+---
+This repository include random codes or programs written as extracurricular hobby for learning practice. Source for learning, the data, etc.: [www.google.com](https://www.google.com/) 
+---
