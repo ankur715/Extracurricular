@@ -185,7 +185,7 @@ l = list(t)
 print(l, type(l))    
 
 
-###lists
+###lists________________
 l = [10,20,30,40,"python",[100,200,300]]
 print(l,type(l))
 # indexing and slicing
@@ -230,7 +230,7 @@ l2 = [100,200,300]
 print(l+l2)
 
 
-###dictionary
+###dictionary________________
 d = {"id":101,
      "name":"ABC",
      "email":"abc@efg.com"}
@@ -271,7 +271,7 @@ d1.clear() #clear every element
 del d1 #error if already cleared
 
 
-###set
+###set________________
 s = {10,20,30,40,50}
 print(s,type(s))
 s = {10,20,30,20,40,20,50}
@@ -313,7 +313,7 @@ print(l3)
 # can't pop(), can remove(), discard() same as remove() but won't give error if not found
 
 
-###math,random module
+###math,random module________________
 import math
 l = [0.1] * 10
 print(sum(l))
@@ -341,7 +341,7 @@ print(random.randrange(1,3)) #1,2
 print(random.uniform(10,20)) #float
 
 
-###def, functions
+###def, functions________________
 s = "Python,HTML,CSS"
 print(s.index("HTML"))
 def value_reverse(value):
@@ -404,7 +404,6 @@ def validate(username,password):
         print("valid password")
     else:
         print("invalid password")
-
 validate("ABC","Abc@123")         
 validate(password="Abc@123",username="ABC")         
 print(100,200,sep=",",end=" ") #default=100 200 ; Hi
@@ -423,12 +422,58 @@ result = add_value(100,200,300,400,500,600,700,800)
 print(result)
 # variable length keyword args
 # name,email,contact,dob
-def get_details(**kwargs): # ** converts to dict
-    
+def get_details(**kwargs): # ** converts to dict    
     print(kwargs)
-
 get_details(name="ABC", email="abc@gmail.com", contact=9171112222, dob="10-21-2050")
 get_details(name="ABC", email="abc@gmail.com", dob="10-21-2050")
 get_details(name="ABC", email="abc@gmail.com")
+# recursive functions
+def factorial(num):
+    if num == 1:
+        return 1
+    else:
+        return num * factorial(num-1)
+num = 5
+result = factorial(num)
+print(result)                        
+# binary search
+def binary_search(l,key):
+    if len(l) == 0:
+        return False
+    else: 
+        mid = len(l) // 2 
+        if l[mid] == key:
+            return True
+        elif key < l[mid]:
+            return binary_search(l[:mid],key)
+        else: 
+            return binary_search(l[mid+1:],key)        
+print(__name__) #__main__
+if __name__ == "__main__":   
+    l = [100,200,300,400,500,600,700,800,900]
+    key = 100
+    result = binary_search(l,key)
+    # mid = 9/2 = 4 = 500 > 700 
+    # [600,700,800,900]
+    # mid = 4/2 = 2 = 800 < 700
+    # [600,700]
+    # mid = 2/2 = 1 = 700 == 700 return True
+    print(result)
+# SAVE mod1.py 
+import mod1
+l = [100,200,300,400,500]
+key = 5000
+print(mod1(l,key))
+help(mod1)
+""" (beginning of script, shows under NAME)
+Description
+Author      
+Date 
+"""
+""" (under def, shows under FUNCTIONS)
+Binary search: input list and key
+return True if ___ else return False
+"""
+###__init__.py will be considered a python directory
 
 
