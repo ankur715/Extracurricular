@@ -51,10 +51,9 @@ for value in l:
 range(5)
 range(2,11)
 range(2,11,2)
-
 for value1 in range(1,21):
-    sum1 = sum1 + value1
-print(sum1)
+    sum = sum + value1
+print(sum)
 # break
 # continue
 # enumerate
@@ -586,7 +585,7 @@ l = [10,20,30,40,50,60]
 g = printVal(l)
 print(next(g)) #10
 print(next(g)) #20...
-l = 10,20,30,40,50,60]
+l = [10,20,30,40,50,60]
 l2 = [value * value for value in l] #list
 l2 = (value * value for value in l) #generator object
 print(next(l2)) #100
@@ -653,7 +652,7 @@ else:
 # pip install BeautifulSoup
 import requests 
 from bs4 import BeautifulSoup
-response = request.get("https://www.magicbricks.com/property-for-sale/residential-real-estate?proptype=Residential-House,Villa&cityName=Vadodara")
+response = requests.get("https://www.magicbricks.com/property-for-sale/residential-real-estate?proptype=Residential-House,Villa&cityName=Vadodara")
 print(response)
 print(response.content) 
 print(response.status_code) #200 to start scraping
@@ -883,6 +882,37 @@ result = concat("python","string")
 print(result)
 
 
+###input, output
+my_file = open("output.txt", "r+") #read and write
+my_list = [i ** 2 for i in range(1, 11)]
+my_file = open("output.txt", "w")
+my_list = [i ** 2 for i in range(1, 11)]
+my_file = open("output.txt", "w")
+for value in my_list:
+    my_file.write(str(value) + "\n")  
+my_file.close()
+my_file = open("output.txt", "r") #read only
+print(my_file.read())
+my_file.close()
+my_file = open("text.txt", "r")
+print(my_file.readline(),my_file.readline(),my_file.readline()) #\n in readlines()
+print(my_file.readline()) #an extra \n after last print
+my_file.close()
+write_file = open("text.txt", "w")
+read_file = open("text.txt", "r")
+write_file.write("Not closing files is VERY BAD.")
+write_file.close()
+print(read_file.read())
+read_file.close()
+r = open("text.txt","r")
+with open("text.txt", "w") as textfile:
+  textfile.write("Success!")
+print(r.read())
+with open("text.txt", "w") as my_file:
+  my_file.write("My Data!")  
+if not my_file.closed:
+  my_file.close()
+print(my_file.closed)
 
 
 ################################################################################
