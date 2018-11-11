@@ -882,7 +882,7 @@ result = concat("python","string")
 print(result)
 
 
-###input, output
+###input, output_________________
 my_file = open("output.txt", "r+") #read and write
 my_list = [i ** 2 for i in range(1, 11)]
 my_file = open("output.txt", "w")
