@@ -1,6 +1,6 @@
-## Random codes or projects 
+## MOOCs and random projects 
 ---
-This repository include random codes or programs written as extracurricular hobby for learning practice. Source for learning, the data, etc.: [www.google.com](https://www.google.com/)  
+This repository include MOOCs' codes and random codes written as extracurricular for learning practice. The MOOCs I enrolled in till now are edX and Coursera, and their codes are not meant to be complete proograms but only references. Source for learning, the data, etc.: [www.google.com](https://www.google.com/)  
 <p align="center">
   <img width="300" height="450" src="https://github.com/ankur715/extracurricular/blob/master/google-pic.jpeg"> 
 </p>
