@@ -84,7 +84,6 @@ for index,value in enumerate(l):
         # will print every interation
 else:
     print("Element not found")
-
 # while loop
 count = 1
 sum = 0
