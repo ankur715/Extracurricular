@@ -7,4 +7,4 @@ This repository include MOOCs' codes and random codes written as extracurricular
 
 ---
 Please excuse the silliness in the old image above. :see_no_evil::hear_no_evil::speak_no_evil:  
-If you have any ideas for a fun project and would like to collaborate, feel free to contact me at [www.p.ankur.715@gmail.com](mailto:www.p.ankur.715@gmail.com).
+If you have any ideas for a project and would like to collaborate, feel free to contact me at [www.p.ankur.715@gmail.com](mailto:www.p.ankur.715@gmail.com).
