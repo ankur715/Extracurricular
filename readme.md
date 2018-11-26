@@ -6,4 +6,4 @@ This repository include MOOCs' codes and random codes written as extracurricular
 </p>
 
 ---
-If you have any ideas for a project and would like to collaborate, feel free to contact me at [www.p.ankur.715@gmail.com](mailto:www.p.ankur.715@gmail.com).
+If you have any ideas for a project and would like to collaborate, feel free to contact me at [www.p.ankur.715@gmail.com](mailto:www.p.ankur.715@gmail.com) or [https://www.linkedin.com/in/ankurpatel715/].
